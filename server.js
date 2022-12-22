@@ -12,6 +12,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 
+//changes made//
+
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('build'))
   app.get('*',(req,res) => {
